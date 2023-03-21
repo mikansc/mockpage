@@ -84,7 +84,6 @@
                         },
                         body: `secret=6LcRaOQkAAAAACm78Ap1YLoR-68FWDDN6uy7QVdJ&response=${token}`,
                         method: 'POST',
-                        mode: 'no-cors'
                     }).then(result => {
                         console.log(result)
                         if (result.ok) return result.json()
