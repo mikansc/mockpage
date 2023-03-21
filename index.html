@@ -59,6 +59,23 @@
     <!-- form STG -->
     <!-- <div role="main" id="meu-form-2-c2ce41264f263d2edc9d"></div><script type="text/javascript" src="https://d2umgtt5tsqx05.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script><script type="text/javascript"> new RDStationForms('meu-form-2-c2ce41264f263d2edc9d', 'null').createForm();</script> -->
 
+    <div>
+        Recaptcha
+        <button onclick="doSomething()">Request</button>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+    <script>
+        function doSomething(e) {
+            e.preventDefault()
+            grecaptcha.ready(
+                grecaptcha.execute('6LcRaOQkAAAAAODuxXEPRCTSWU2HbZc-NZ4iZ4NV', {action: 'submit'}).then(token => {
+                    console.log(token)
+                })
+            )
+        }
+
+    </script>
+
 </body>
 
 </html>
