@@ -61,11 +61,11 @@
 
     <div>
         Recaptcha
-        <button onclick="doSomething(this)">Request</button>
+        <button onclick="doSomething(_, e)" type="button">Request</button>
     </div>
     <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
     <script>
-        function doSomething(e) {
+        function doSomething(_, e) {
             e.preventDefault()
             grecaptcha.ready(
                 grecaptcha.execute('6LcRaOQkAAAAAODuxXEPRCTSWU2HbZc-NZ4iZ4NV', {action: 'submit'}).then(token => {
