@@ -79,9 +79,7 @@
                     body.append('response', token)
 
                     fetch(`https://www.google.com/recaptcha/api/siteverify`, {
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded',
-                        },
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                         body: `secret=6LcRaOQkAAAAACm78Ap1YLoR-68FWDDN6uy7QVdJ&response=${token}`,
                         method: 'POST',
                     }).then(result => {
