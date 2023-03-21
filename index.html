@@ -74,10 +74,6 @@
             grecaptcha.ready(
                 grecaptcha.execute('6LcRaOQkAAAAAODuxXEPRCTSWU2HbZc-NZ4iZ4NV', { action: 'submit' }).then(token => {
                     console.log(token)
-                    const body = new URLSearchParams()
-                    body.append('secret', '6LcRaOQkAAAAACm78Ap1YLoR-68FWDDN6uy7QVdJ')
-                    body.append('response', token)
-
                     fetch(`https://www.google.com/recaptcha/api/siteverify`, {
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                         body: `secret=6LcRaOQkAAAAACm78Ap1YLoR-68FWDDN6uy7QVdJ&response=${token}`,
