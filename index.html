@@ -78,7 +78,7 @@
                     body.append('secret', '6LcRaOQkAAAAACm78Ap1YLoR-68FWDDN6uy7QVdJ')
                     body.append('response', token)
 
-                    fetch('https://www.google.com/recaptcha/api/siteverify?secret=6LcRaOQkAAAAACm78Ap1YLoR-68FWDDN6uy7QVdJ', {
+                    fetch(`https://www.google.com/recaptcha/api/siteverify?secret=6LcRaOQkAAAAACm78Ap1YLoR-68FWDDN6uy7QVdJ&response=${token}`, {
                         headers: {
                             'Content-Type': 'application/x-www-form-urlencoded',
                         },
