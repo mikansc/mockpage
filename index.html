@@ -78,12 +78,12 @@
                     body.append('secret', '6LcRaOQkAAAAACm78Ap1YLoR-68FWDDN6uy7QVdJ')
                     body.append('response', token)
 
-                    fetch('https://www.google.com/recaptcha/api/siteverify', {
+                    fetch('https://www.google.com/recaptcha/api/siteverify?secret=6LcRaOQkAAAAACm78Ap1YLoR-68FWDDN6uy7QVdJ', {
                         headers: {
                             'Content-Type': 'application/x-www-form-urlencoded',
                         },
-                        body,
                         method: 'POST',
+                        mode: 'no-cors'
                     }).then(result => {
                         console.log(result)
                         if (result.ok) return result.json()
