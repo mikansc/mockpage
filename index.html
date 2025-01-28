@@ -23,41 +23,162 @@
     <header
       style="position: fixed; height: 80px; width: 100%; background: #b3f6f8"
     >
-      <div
-        style="display: flex; justify-content: flex-start; align-items: center"
-      >
+      <div>
         <p>Barra de navegação</p>
       </div>
     </header>
     <div style="padding-top: 80px"></div>
     <!--     name="nome-do-form-com-mais-de-cinquenta-caracteres-para-teste-de-bugfix" -->
-    <form class="form" name="nome-do-form">
-      <div class="container">
+    <div class="container">
+      <form class="form" name="form-teste-mika-page-mock">
         <h1>Página de testes</h1>
 
-        <div class="form-group mb-3">
+        <div class="mb-3">
           <label>E-mail</label>
           <input id="email" name="email" class="form-control" />
         </div>
 
-        <div class="form-group mb-3">
+        <div class="mb-3">
           <label>Nome</label>
           <input id="name" name="name" class="form-control" />
         </div>
 
-        <div class="form-group mb-3">
+        <div class="mb-3">
           <label>Idade</label>
           <input id="cf_idade" name="cf_idade" class="form-control" />
         </div>
 
-        <div class="form-group mb-3">
+        <div class="mb-5">
           <label>Outra idade</label>
           <input id="cf_idade2" name="cf_idade2" class="form-control" />
         </div>
+        <div class="mb-5">
+          <p>Selecione as áreas de interesse</p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="areas_de_interesse_0"
+              name="areas_de_interesse.marketing"
+              value="Marketing"
+            />
+            <label class="form-check-label" for="areas_de_interesse_0">
+              Marketing</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="areas_de_interesse_1"
+              name="areas_de_interesse.vendas"
+              value="Vendas"
+            />
+            <label class="form-check-label" for="areas_de_interesse_1">
+              Vendas</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="areas_de_interesse_2"
+              name="areas_de_interesse.tecnologia"
+              value="Tecnologia"
+            />
+            <label class="form-check-label" for="areas_de_interesse_2">
+              Tecnologia</label
+            >
+          </div>
+        </div>
 
-        <button class="btn btn-primary my-4" type="submit">Enviar</button>
-      </div>
-    </form>
+        <div class="mb-5">
+          <label for="senioridade" class="form-label">Senioridade</label>
+          <select id="senioridade" name="senioridade" class="form-select">
+            <option value="junior">Junior</option>
+            <option value="pleno">Pleno</option>
+            <option value="senior">Senior</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="tempo_de_experiencia" class="form-label"
+            >Tempo de Experiência</label
+          >
+          <div class="form-check mb-2">
+            <input
+              class="form-check form-check-input"
+              type="radio"
+              id="tempo_de_experiencia_0"
+              name="tempo_de_experiencia"
+              value="1 a 3 anos"
+            />
+            <label
+              class="form-check form-check-label"
+              for="tempo_de_experiencia_0"
+              >1 a 3 anos</label
+            >
+          </div>
+
+          <div class="form-check mb-2">
+            <input
+              class="form-check form-check-input"
+              type="radio"
+              id="tempo_de_experiencia_1"
+              name="tempo_de_experiencia"
+              value="3 a 5 anos"
+            />
+            <label
+              class="form-check form-check-label"
+              for="tempo_de_experiencia_1"
+              >3 a 5 anos</label
+            >
+          </div>
+
+          <div class="form-check mb-2">
+            <input
+              class="form-check form-check-input"
+              type="radio"
+              id="tempo_de_experiencia_2"
+              name="tempo_de_experiencia"
+              value="mais de 5 anos"
+            />
+            <label
+              class="form-check form-check-label"
+              for="tempo_de_experiencia_2"
+              >mais de 5 anos</label
+            >
+          </div>
+        </div>
+
+        <!-- Address fields with sctructure endereco.info ex: endereco.rua -->
+        <div class="mb-3">
+          <label for="endereco.rua" class="form-label">Rua</label>
+          <input id="endereco.rua" name="endereco.rua" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label for="endereco.numero" class="form-label">Número</label>
+          <input
+            id="endereco.numero"
+            name="endereco.numero"
+            class="form-control"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="endereco.bairro" class="form-label">Bairro</label>
+          <input
+            id="endereco.bairro"
+            name="endereco.bairro"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-primary my-4" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
     <!-- 
     <div role="main" id="f3-088a52bb92dd1f3a1245"></div>
     <script
