@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>PageMock</title>
+  </head>
+
+  <body>
+    <header
+      style="position: fixed; height: 80px; width: 100%; background: #b3f6f8"
+    >
+      <div>
+        <p>Barra de navegação</p>
+        <a href="https://github.com/mikansc/mockpage" target="_blank">Repo</a>
+      </div>
+    </header>
+    <div style="padding-top: 80px"></div>
+    <div class="container">
+      <form class="form" name="form-mika-benchmark" id="form-mika-benchmark">
+        <h1>Página de benchmark</h1>
+        <span>Teste de velocidade de execução do script</span>
+
+        <div class="mb-3">
+          <label>Nome</label>
+          <input id="name" name="name" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label>E-mail</label>
+          <input id="email" name="email" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label>Idade</label>
+          <input id="cf_idade" name="cf_idade" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label>Idade</label>
+          <input id="phone" name="phone" type="tel" class="form-control" />
+        </div>
+
+        <div class="mb-5">
+          <p>Selecione as áreas de interesse</p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="areas_de_interesse_0"
+              name="areas_de_interesse.marketing"
+              value="Marketing"
+            />
+            <label class="form-check-label" for="areas_de_interesse_0">
+              Marketing</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="areas_de_interesse_1"
+              name="areas_de_interesse.vendas"
+              value="Vendas"
+            />
+            <label class="form-check-label" for="areas_de_interesse_1">
+              Vendas</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="areas_de_interesse_2"
+              name="areas_de_interesse.tecnologia"
+              value="Tecnologia"
+            />
+            <label class="form-check-label" for="areas_de_interesse_2">
+              Tecnologia</label
+            >
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <label for="senioridade" class="form-label">Senioridade</label>
+          <select id="senioridade" name="senioridade" class="form-select">
+            <option value="junior">Junior</option>
+            <option value="pleno">Pleno</option>
+            <option value="senior">Senior</option>
+          </select>
+        </div>
+
+        <div class="mb-5">
+          <p>Politica de privacidade</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="politica-privacidade"
+              name="politica-privacidade"
+              data-privacy
+            />
+            <label class="form-check-label" for="confirmar-comunicacao">
+              Confirmo a política de privacidade</label
+            >
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <button class="btn btn-primary my-4" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <span>Script de código de monitoramento: <strong>staging</strong></span>
+    <script
+      type="text/javascript"
+      async
+      src="https://d2umgtt5tsqx05.cloudfront.net/js/loader-scripts/8f9ed4e5-e847-4150-8714-7825c0226774-loader.js"
+    ></script>
+  </body>
+</html>
