@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>PageMock</title>
+  </head>
+
+  <body>
+    <header
+      style="position: fixed; height: 80px; width: 100%; background: #b3f6f8"
+    >
+      <div>
+        <p>Barra de navegação</p>
+        <a href="https://github.com/mikansc/mockpage" target="_blank">Repo</a>
+      </div>
+    </header>
+    <div style="padding-top: 80px"></div>
+    <!--     name="nome-do-form-com-mais-de-cinquenta-caracteres-para-teste-de-bugfix" -->
+    <div class="container">
+      <form
+        class="form"
+        name="form-mika-teste-script"
+        id="form-mika-teste-script"
+      >
+        <h1>Página de testes</h1>
+
+        <div class="mb-3">
+          <label>E-mail</label>
+          <input id="xablau" name="xablau" class="form-control" type="text" />
+        </div>
+
+        <div class="mb-3">
+          <label>Nome</label>
+          <input id="name" name="name" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label>Idade</label>
+          <input id="cf_idade" name="cf_idade" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label>N. Cartao de credito</label>
+          <input id="credit_card" name="credit_card" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label>CVV</label>
+          <input id="cvv" name="cvv" class="form-control" />
+        </div>
+
+        <div class="mb-5">
+          <label>Outra idade</label>
+          <input id="cf_idade2" name="cf_idade2" class="form-control" />
+        </div>
+        <div class="mb-5">
+          <p>Selecione as áreas de interesse</p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="areas_de_interesse_0"
+              name="areas_de_interesse.marketing"
+              value="Marketing"
+            />
+            <label class="form-check-label" for="areas_de_interesse_0">
+              Marketing</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="areas_de_interesse_1"
+              name="areas_de_interesse.vendas"
+              value="Vendas"
+            />
+            <label class="form-check-label" for="areas_de_interesse_1">
+              Vendas</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="areas_de_interesse_2"
+              name="areas_de_interesse.tecnologia"
+              value="Tecnologia"
+            />
+            <label class="form-check-label" for="areas_de_interesse_2">
+              Tecnologia</label
+            >
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <label for="senioridade" class="form-label">Senioridade</label>
+          <select id="senioridade" name="senioridade" class="form-select">
+            <option value="Junior">Junior</option>
+            <option value="Pleno">Pleno</option>
+            <option value="Senior">Senior</option>
+            <option value="Especialista">Especialista</option>
+            <option value="Outros">Outros</option>
+          </select>
+        </div>
+
+        <div class="mb-5">
+          <p>Aceite de privacidade</p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              data-privacy
+              id="privacidade"
+              name="areas_de_interesse.marketing"
+              value="Marketing"
+            />
+            <label class="form-check-label" for="privacidade">
+              Aceito a privacidade</label
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- PRODUCAO MIKA DEV -->
+    <script
+      type="text/javascript"
+      async
+      src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/fe74e9ac-8dac-4d7f-b51f-917437dbce26-loader.js"
+    ></script>
+
+    <!-- STAGING LEADGEN STAGING -->
+    <!-- <script
+      type="text/javascript"
+      async
+      src="https://d2umgtt5tsqx05.cloudfront.net/js/loader-scripts/37c417d5-3210-423a-87b4-a7a486315d5c-loader.js"
+    ></script> -->
+
+    <!-- STAGING MIKA -->
+
+    <!-- <script type="text/javascript" async src="https://d2umgtt5tsqx05.cloudfront.net/js/loader-scripts/8f9ed4e5-e847-4150-8714-7825c0226774-loader.js" ></script> -->
+  </body>
+</html>
